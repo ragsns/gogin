@@ -18,7 +18,7 @@ func main() {
 
   r.GET("/", func(c *gin.Context) {
     c.JSON(200, gin.H{
-      "message": "Hello, world!",
+      "message": "Hello Boston!",
     })
   })
 
@@ -26,7 +26,7 @@ func main() {
     name := c.Param("name")
 
     c.JSON(200, gin.H{
-      "message": fmt.Sprintf("Hello, %s!", name),
+      "message": fmt.Sprintf("Hello Bostonian, %s!", name),
     })
   })
 
